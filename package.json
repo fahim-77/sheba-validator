@@ -1,0 +1,35 @@
+{
+  "name": "sheba-validator",
+  "version": "1.0.0",
+  "description": "A lightweight Iranian Sheba (IBAN) validator with bank detection, merged bank support, and bank logos.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "license": "MIT",
+  "keywords": [
+    "sheba",
+    "iban",
+    "iran",
+    "bank",
+    "validator"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --clean && tsc --emitDeclarationOnly",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^7.0.2"
+  }
+}
