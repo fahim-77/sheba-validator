@@ -137,5 +137,17 @@ export function validateSheba(sheba: string, options: BankInfoOptions = {}): She
   };
 }
 
+export function getBankBySlug(slug: string, options: BankInfoOptions = {}): BankInfo | null {
+  if (!slug || typeof slug !== "string") return null;
+
+  const normalizedSlug = slug.trim().toLowerCase();
+
+  const bankCode = Object.keys(BANKS_DATA).find((code) => BANKS_DATA[code]?.slug.toLowerCase() === normalizedSlug);
+
+  if (!bankCode) return null;
+
+  return getBankInfoByCode(bankCode, options);
+}
+
 export { getBankInfoByCode };
 export type { BankInfo, BankInfoOptions };
