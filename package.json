@@ -32,5 +32,13 @@
   "devDependencies": {
     "tsup": "^8.5.1",
     "typescript": "^7.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fahim-77/sheba-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fahim-77/sheba-validator/issues"
+  },
+  "homepage": "https://github.com/fahim-77/sheba-validator#readme"
 }
