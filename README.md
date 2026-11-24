@@ -1,5 +1,7 @@
 # Sheba Validator 🟢
 
+![NPM Total Downloads](https://img.shields.io/npm/dt/sheba-validator?style=flat-square&color=blue)
+
 A lightweight, zero-dependency TypeScript library for validating Iranian Sheba (IBAN) numbers, detecting bank details, handling merged banks, and offering embedded bank logos for UI components.
 
 ## Features ✨
